@@ -1,0 +1,28 @@
+---
+
+hostname_prefix: jenkins-node
+hostname: hn-development.net
+
+system_packages:
+  - 'java-1.8.0'
+  - 'git'
+  - 'ntpdate'
+
+artefact_src_path: 'https://s3.amazonaws.com/artefact-bucket-store'
+
+arefact_paths:
+  - [ 'jenkins-node/agent.jar', '/agent' ]
+  - [ 'jenkins-node/agent_wrapper.sh', '/usr/local/sbin' ]
+
+users_groups:
+  - [ 'jenkins', 'jenkins', '/home/jenkins' ]
+
+users_groups_map:
+  - username: jenkins
+    group: jenkins
+    homedir: /var/jenkins
+  - username: loguser
+    group: loguser
+    homedir: /home/loguser
+
+

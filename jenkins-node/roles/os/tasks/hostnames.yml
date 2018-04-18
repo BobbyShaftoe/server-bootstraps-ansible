@@ -1,0 +1,21 @@
+
+- name: Create host entry
+  lineinfile:
+    dest: /etc/hosts
+    line: "{{ ansible_default_ipv4.address }} {{ ansible_hostname }}.{{ansible_domain}}"
+    state: present
+    insertafter: EOF
+
+- name: Create host entry for server role
+  lineinfile:
+    dest: /etc/hosts
+    line: "{{ ansible_default_ipv4.address }} {{ hostname_prefix }}.{{ hostname }}"
+    state: present
+    insertafter: EOF
+
+- name: Set system hostname
+  hostname:
+    name: "{{ hostname_prefix }}.{{ hostname }}"
+
+
+

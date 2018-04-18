@@ -1,0 +1,9 @@
+---
+
+- name: "Install packages that are dependencies"
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ system_packages }}"
+
+

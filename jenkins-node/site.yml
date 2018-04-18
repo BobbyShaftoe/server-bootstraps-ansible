@@ -1,0 +1,14 @@
+---
+
+- hosts: jenkins-node
+
+  roles:
+
+    - { role: os,
+        become: yes
+      }
+
+    - { role: users,
+        become: yes
+      }
+
