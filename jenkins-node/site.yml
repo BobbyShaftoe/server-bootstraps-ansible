@@ -12,3 +12,7 @@
         become: yes
       }
 
+    - { role: dependencies,
+        become: yes
+      }
+
