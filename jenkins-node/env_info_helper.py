@@ -2,7 +2,6 @@
 
 import os
 import sys
-#from subprocess import getoutput
 import subprocess 
 import logging
 
@@ -21,12 +20,13 @@ except Exception as e:
     logging.error("No option to command provided")
     sys.exit(1)
 
+cmdArgs  = sys.argv[1:] 
 
-def getPath(a):
-    arg = a
+
+
+def getPath(arg):
     stdOut = subprocess.check_output("readlink -f $(which " +  arg + ")", shell=True).rstrip()
     return stdOut
-
 
 def getEnvVar(arg):
     stdOut = os.environ[arg]
@@ -35,8 +35,8 @@ def getEnvVar(arg):
 def getSysVal(arg, *args):
     matchPatterns = list(args)
     with open(arg, 'r') as f:
-       fileLines = r.read() 
-    matchedLines = [l for l in meminfo.split("\n") if any(xs in l for xs in matchPatterns)]       
+       fileLines = f.read() 
+    matchedLines = [l for l in fileLines if any(xs in l for xs in matchPatterns)]       
     stdOut =  matchedLines
     return stdOut
 
@@ -50,7 +50,7 @@ elif cmdName == 'env_var':
     print("%s" % cmdStdOut)
 
 elif cmdName == 'sys_value':
-    cmdStdOut = getSysVal(cmdArg)
+    cmdStdOut = getSysVal(cmdArg, cmdArgs)
     print("%s" % cmdStdOut)
 
 else: 
@@ -62,42 +62,39 @@ else:
 
 
 
-
-### COMMANDS ###
-
-##  "real_path"
-#  USAGE: [path], path
-#  path, java
-#  path, ansible
+#    """
+#     Very Simple COMMAND reference
+#    
+#      "real_path"
+#       USAGE: [path], path
+#         path, java
+#         path, ansible
+#    
+#      "env_var"
+#        USAGE: [env_var], variable_name
+#          env_var, HOME
+#          env_var, LANG
+#          env_var, PATH
+#    
+#      "sys_value" (reads proc, sys, etc)
+#       USAGE: [sys_value], path, attribute
+#         value, /proc/meminfo, MemFree 
+#         value, /sys/devices/system/cpu/vulnerabilities/meltdown, Mitigation
+#         value, /etc/java/java.conf, JAVA_HOME
+#        
+#      "system_stat"
+#       USAGE: [system], command (all comments and whitespace are removed and a list of arrays returned)
+#         system, uptime
+#         system, load
+#        
+#    
+#      "any" (all comments and whitespace are removed and a list of arrays returned)
+#       USAGE: [any], cmd, arg1, arg2 ...
+#         any, uname, -r
+#         any, free, -h
+#        
+#    """
 #
-
-##  "env_var"
-#  USAGE: [env_var], variable_name
-#  env_var, HOME
-#  env_var, LANG
-#  env_var, PATH
-#
-
-##  "sys_value" (reads proc, sys, etc)
-#  USAGE: [sys_value], path, attribute
-#  value, /proc/meminfo, MemFree 
-#  value, /sys/devices/system/cpu/vulnerabilities/meltdown, Mitigation
-#  value, /etc/java/java.conf, JAVA_HOME
-
-##  "system_stat"
-#  USAGE: [system], command (all comments and whitespace are removed and a list of arrays returned)
-#  system, uptime
-#  system, load
-#
-
-##  "any" (all comments and whitespace are removed and a list of arrays returned)
-#  USAGE: [any], cmd, arg1, arg2 ...
-#  any, uname, -r
-#  any, free, -h
-#
-
-
-
 
 
 
