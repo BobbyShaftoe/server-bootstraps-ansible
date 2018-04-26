@@ -1,61 +1,72 @@
 #!/usr/bin/env python
 
-import os
-import sys
-import subprocess 
 import logging
-
+import os
+import subprocess
+import sys
 
 logging.basicConfig(format='Local Exec: %(message)s', level=logging.ERROR)
 
 try:
-    cmdName    = sys.argv.pop(1)
+    cmd_name = sys.argv.pop(1)
 except IndexError as e:
     logging.error("No command provided")
-    sys.exit(1) 
+    sys.exit(1)
 
 try:
-    cmdArg   = sys.argv.pop(1)
+    cmd_arg = sys.argv.pop(1)
 except Exception as e:
     logging.error("No option to command provided")
     sys.exit(1)
 
-cmdArgs  = sys.argv[1:] 
+cmd_args = sys.argv[1:]
 
 
+def get_path(arg):
+    std_out = subprocess.check_output("readlink -f $(which " + arg + ")", shell=True).rstrip()
+    return std_out
 
-def getPath(arg):
-    stdOut = subprocess.check_output("readlink -f $(which " +  arg + ")", shell=True).rstrip()
-    return stdOut
 
-def getEnvVar(arg):
-    stdOut = os.environ[arg]
-    return stdOut
+def get_env_var(arg):
+    std_out = os.environ[arg]
+    return std_out
 
-def getSysVal(arg, *args):
-    matchPatterns = args
+
+def get_sys_val(arg, *args):
+    match_patterns = args
     with open(arg, 'r') as f:
-       fileLines = f.read().split('\n')
-    matchedLines = [x for x in fileLines if any(w in x for w in matchPatterns)]
-    stdOut =  ('\n').join(matchedLines)
-    return stdOut
+        file_lines = f.read().split('\n')
+    matched_lines = [x for x in file_lines if any(w in x for w in match_patterns)]
+    std_out = '\n'.join(matched_lines)
+    return std_out
 
 
-if cmdName == 'real_path':
-    cmdStdOut = getPath(cmdArg)
+if cmd_name == 'real_path':
+    cmdStdOut = get_path(cmd_arg)
     print("%s" % cmdStdOut)
 
-elif cmdName == 'env_var':
-    cmdStdOut = getEnvVar(cmdArg)
+elif cmd_name == 'env_var':
+    cmdStdOut = get_env_var(cmd_arg)
     print("%s" % cmdStdOut)
 
-elif cmdName == 'sys_value':
-    cmdStdOut = getSysVal(cmdArg, *cmdArgs)
+elif cmd_name == 'sys_value':
+    cmdStdOut = get_sys_val(cmd_arg, *cmd_args)
     print("%s" % cmdStdOut)
 
-else: 
+else:
     logging.error("Unknown command")
     sys.exit(1)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -97,27 +108,25 @@ else:
 #
 
 
-
 #                                     EXTRA REFERENCE
 #######################################################################################
 
 
 # Alternative method using list comprehension
-#def getSysVal(arg, *args):
-#    matchPatterns = args
+# def getSysVal(arg, *args):
+#    match_patterns = args
 #
 #    with open(arg, 'r') as f:
-#       fileLines = f.read().split('\n')
+#       file_lines = f.read().split('\n')
 #
-#    matchedLines = []
-#    for l in fileLines:
+#    matched_lines = []
+#    for l in file_lines:
 #        print("Checking: " + l)
-#        if any(xs in l for xs in matchPatterns):
-#            matchedLines.append(l)
+#        if any(xs in l for xs in match_patterns):
+#            matched_lines.append(l)
 #
-#    stdOut =  matchedLines
-#    return stdOut
-
+#    std_out =  matched_lines
+#    return std_out
 
 
 # cmd = "ps -A|grep 'process_name'"
@@ -129,12 +138,9 @@ else:
 # ls_lines = subprocess.check_output(['ls', '-l']).splitlines()
 
 
-
 # import subprocess
 # child = subprocess.Popen('command',stdout=subprocess.PIPE,shell=True)
 # output = child.communicate()[0]
-
-
 
 
 # import platform
@@ -151,8 +157,6 @@ else:
 #
 
 
-
-
 # fcntl.fcntl(
 #     proc.stdout.fileno(),
 #     fcntl.F_SETFL,
@@ -166,6 +170,4 @@ else:
 #         chunk = proc.stdout.read()
 #         print chunk
 # 
-# 
-
- 
+#
