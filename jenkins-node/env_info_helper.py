@@ -33,10 +33,25 @@ def getEnvVar(arg):
     return stdOut
 
 def getSysVal(arg, *args):
-    matchPatterns = list(args)
+#    matchPatterns = tuple(args)
+    matchPatterns = ('MemAvailable', 'two', 'three')
+    print(type(matchPatterns))
+    print(matchPatterns)
+
     with open(arg, 'r') as f:
-       fileLines = f.read() 
-    matchedLines = [l for l in fileLines if any(xs in l for xs in matchPatterns)]       
+       fileLines = f.read().split('\n')
+    print(type(fileLines))
+    print(fileLines)
+
+    matchedLines = [x for x in fileLines if any(w in x for w in matchPatterns)]
+#    matchedLines = []
+#    for l in fileLines:
+#        print("Checking: " + l)
+#        if any(xs in l for xs in matchPatterns):
+#            matchedLines.append(l)
+#
+    print("Done")
+    print(matchedLines)
     stdOut =  matchedLines
     return stdOut
 
