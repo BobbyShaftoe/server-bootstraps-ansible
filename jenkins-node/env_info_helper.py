@@ -23,35 +23,43 @@ cmd_args = sys.argv[1:]
 
 
 def get_path(arg):
-    std_out = subprocess.check_output("readlink -f $(which " + arg + ")", shell=True).rstrip()
-    return std_out
-
+    try: 
+      std_out = subprocess.check_output("readlink -f $(which " + arg + ")", shell=True).rstrip()
+      return std_out
+    except Exception as e:
+      return "Error on stat operation on: " + arg
 
 def get_env_var(arg):
-    std_out = os.environ[arg]
-    return std_out
+    try:
+      std_out = os.environ[arg]
+      return std_out
+    except KeyError as e:
+      return "Environment variable: " + arg + " not set"
 
 
 def get_sys_val(arg, *args):
     match_patterns = args
-    with open(arg, 'r') as f:
-        file_lines = f.read().split('\n')
+    try:
+      with open(arg, 'r') as f:
+          file_lines = f.read().split('\n')
+    except IOError as e:
+      return "Cannot read file: " + arg
     matched_lines = [x for x in file_lines if any(w in x for w in match_patterns)]
     std_out = '\n'.join(matched_lines)
     return std_out
 
 
 if cmd_name == 'real_path':
-    cmdStdOut = get_path(cmd_arg)
-    print("%s" % cmdStdOut)
+    cmd_std_out = get_path(cmd_arg)
+    print("%s" % cmd_std_out)
 
 elif cmd_name == 'env_var':
-    cmdStdOut = get_env_var(cmd_arg)
-    print("%s" % cmdStdOut)
+    cmd_std_out = get_env_var(cmd_arg)
+    print("%s" % cmd_std_out)
 
 elif cmd_name == 'sys_value':
-    cmdStdOut = get_sys_val(cmd_arg, *cmd_args)
-    print("%s" % cmdStdOut)
+    cmd_std_out = get_sys_val(cmd_arg, *cmd_args)
+    print("%s" % cmd_std_out)
 
 else:
     logging.error("Unknown command")
