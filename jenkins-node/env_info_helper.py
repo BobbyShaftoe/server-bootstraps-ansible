@@ -33,26 +33,11 @@ def getEnvVar(arg):
     return stdOut
 
 def getSysVal(arg, *args):
-#    matchPatterns = tuple(args)
-    matchPatterns = ('MemAvailable', 'two', 'three')
-    print(type(matchPatterns))
-    print(matchPatterns)
-
+    matchPatterns = args
     with open(arg, 'r') as f:
        fileLines = f.read().split('\n')
-    print(type(fileLines))
-    print(fileLines)
-
     matchedLines = [x for x in fileLines if any(w in x for w in matchPatterns)]
-#    matchedLines = []
-#    for l in fileLines:
-#        print("Checking: " + l)
-#        if any(xs in l for xs in matchPatterns):
-#            matchedLines.append(l)
-#
-    print("Done")
-    print(matchedLines)
-    stdOut =  matchedLines
+    stdOut =  ('\n').join(matchedLines)
     return stdOut
 
 
@@ -65,7 +50,7 @@ elif cmdName == 'env_var':
     print("%s" % cmdStdOut)
 
 elif cmdName == 'sys_value':
-    cmdStdOut = getSysVal(cmdArg, cmdArgs)
+    cmdStdOut = getSysVal(cmdArg, *cmdArgs)
     print("%s" % cmdStdOut)
 
 else: 
@@ -115,6 +100,26 @@ else:
 
 #                                     EXTRA REFERENCE
 #######################################################################################
+
+
+# Alternative method using list comprehension
+#def getSysVal(arg, *args):
+#    matchPatterns = args
+#
+#    with open(arg, 'r') as f:
+#       fileLines = f.read().split('\n')
+#
+#    matchedLines = []
+#    for l in fileLines:
+#        print("Checking: " + l)
+#        if any(xs in l for xs in matchPatterns):
+#            matchedLines.append(l)
+#
+#    stdOut =  matchedLines
+#    return stdOut
+
+
+
 # cmd = "ps -A|grep 'process_name'"
 # ps = subprocess.Popen(cmd,shell=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
 # output = ps.communicate()[0]
