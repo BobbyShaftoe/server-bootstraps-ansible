@@ -10,9 +10,13 @@ system_packages:
 
 artefact_src_path: 'https://s3.amazonaws.com/artefact-bucket-store'
 
-arefact_paths:
-  - [ 'jenkins-node/agent.jar', '/agent' ]
-  - [ 'jenkins-node/agent_wrapper.sh', '/usr/local/sbin' ]
+artefact_paths:
+  jenkins:
+    - [ 'jenkins-node/agent.jar', '/agent' ]
+
+script_paths:
+  jenkins_agent_wrapper: '/usr/local/sbin'
+  env_utility_script: '/usr/local/sbin'
 
 users_groups:
   - [ 'jenkins', 'jenkins', '/home/jenkins' ]
