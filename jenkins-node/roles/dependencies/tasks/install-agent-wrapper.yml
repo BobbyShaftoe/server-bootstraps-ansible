@@ -14,7 +14,7 @@
 
 - name: "Set java path fact"
   set_fact:
-    java_path: "{{ tmp_java_path.stdout | regex_replace('/bin/.*', '') }}"
+    java_path: "{{ tmp_java_path.stdout | regex_replace('/jre/bin/.*', '') }}"
 
 - name: "Install agent wrapper"
   template:

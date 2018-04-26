@@ -3,4 +3,5 @@
 - include: install-packages.yml
 - include: install-agent.yml
 - include: install-agent-wrapper.yml
+- include: setup-profile.yml
 

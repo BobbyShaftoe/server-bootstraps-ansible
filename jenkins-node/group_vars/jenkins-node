@@ -18,8 +18,6 @@ script_paths:
   jenkins_agent_wrapper: "{{ jenkins_home }}/bin"
   env_utility_script: '/usr/local/sbin'
 
-#users_groups:
-#  - [ 'jenkins', 'jenkins', '/home/jenkins' ]
 
 jenkins_home: /var/jenkins
 

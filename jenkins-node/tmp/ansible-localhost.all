@@ -28,16 +28,16 @@ Module Variables ("vars"):
     "ansible_date_time": {
         "date": "2018-04-26", 
         "day": "26", 
-        "epoch": "1524768453", 
-        "hour": "18", 
-        "iso8601": "2018-04-26T18:47:33Z", 
-        "iso8601_basic": "20180426T184733962274", 
-        "iso8601_basic_short": "20180426T184733", 
-        "iso8601_micro": "2018-04-26T18:47:33.962347Z", 
-        "minute": "47", 
+        "epoch": "1524770918", 
+        "hour": "19", 
+        "iso8601": "2018-04-26T19:28:38Z", 
+        "iso8601_basic": "20180426T192838101137", 
+        "iso8601_basic_short": "20180426T192838", 
+        "iso8601_micro": "2018-04-26T19:28:38.101202Z", 
+        "minute": "28", 
         "month": "04", 
-        "second": "33", 
-        "time": "18:47:33", 
+        "second": "38", 
+        "time": "19:28:38", 
         "tz": "UTC", 
         "tz_offset": "+0000", 
         "weekday": "Thursday", 
@@ -271,16 +271,16 @@ Module Variables ("vars"):
         "date_time": {
             "date": "2018-04-26", 
             "day": "26", 
-            "epoch": "1524768453", 
-            "hour": "18", 
-            "iso8601": "2018-04-26T18:47:33Z", 
-            "iso8601_basic": "20180426T184733962274", 
-            "iso8601_basic_short": "20180426T184733", 
-            "iso8601_micro": "2018-04-26T18:47:33.962347Z", 
-            "minute": "47", 
+            "epoch": "1524770918", 
+            "hour": "19", 
+            "iso8601": "2018-04-26T19:28:38Z", 
+            "iso8601_basic": "20180426T192838101137", 
+            "iso8601_basic_short": "20180426T192838", 
+            "iso8601_micro": "2018-04-26T19:28:38.101202Z", 
+            "minute": "28", 
             "month": "04", 
-            "second": "33", 
-            "time": "18:47:33", 
+            "second": "38", 
+            "time": "19:28:38", 
             "tz": "UTC", 
             "tz_offset": "+0000", 
             "weekday": "Thursday", 
@@ -583,16 +583,16 @@ Module Variables ("vars"):
         "lsb": {}, 
         "machine": "x86_64", 
         "machine_id": "6376d7af4feb4cb0a80f68cca21b52e0", 
-        "memfree_mb": 2938, 
+        "memfree_mb": 2937, 
         "memory_mb": {
             "nocache": {
-                "free": 3685, 
-                "used": 261
+                "free": 3684, 
+                "used": 262
             }, 
             "real": {
-                "free": 2938, 
+                "free": 2937, 
                 "total": 3946, 
-                "used": 1008
+                "used": 1009
             }, 
             "swap": {
                 "cached": 0, 
@@ -605,18 +605,18 @@ Module Variables ("vars"):
         "module_setup": true, 
         "mounts": [
             {
-                "block_available": 4863374, 
+                "block_available": 4864503, 
                 "block_size": 4096, 
                 "block_total": 5239803, 
-                "block_used": 376429, 
+                "block_used": 375300, 
                 "device": "/dev/xvda1", 
                 "fstype": "xfs", 
-                "inode_available": 10436140, 
+                "inode_available": 10436113, 
                 "inode_total": 10484720, 
-                "inode_used": 48580, 
+                "inode_used": 48607, 
                 "mount": "/", 
                 "options": "rw,noatime,attr2,inode64,noquota", 
-                "size_available": 19920379904, 
+                "size_available": 19925004288, 
                 "size_total": 21462233088, 
                 "uuid": "5f826d47-a506-4747-83c0-2f876efb2a34"
             }
@@ -678,7 +678,7 @@ Module Variables ("vars"):
         ], 
         "system_capabilities_enforced": "True", 
         "system_vendor": "Xen", 
-        "uptime_seconds": 710679, 
+        "uptime_seconds": 713144, 
         "user_dir": "/home/ec2-user", 
         "user_gecos": "EC2 Default User", 
         "user_gid": 1000, 
@@ -788,16 +788,16 @@ Module Variables ("vars"):
     "ansible_lsb": {}, 
     "ansible_machine": "x86_64", 
     "ansible_machine_id": "6376d7af4feb4cb0a80f68cca21b52e0", 
-    "ansible_memfree_mb": 2938, 
+    "ansible_memfree_mb": 2937, 
     "ansible_memory_mb": {
         "nocache": {
-            "free": 3685, 
-            "used": 261
+            "free": 3684, 
+            "used": 262
         }, 
         "real": {
-            "free": 2938, 
+            "free": 2937, 
             "total": 3946, 
-            "used": 1008
+            "used": 1009
         }, 
         "swap": {
             "cached": 0, 
@@ -809,18 +809,18 @@ Module Variables ("vars"):
     "ansible_memtotal_mb": 3946, 
     "ansible_mounts": [
         {
-            "block_available": 4863374, 
+            "block_available": 4864503, 
             "block_size": 4096, 
             "block_total": 5239803, 
-            "block_used": 376429, 
+            "block_used": 375300, 
             "device": "/dev/xvda1", 
             "fstype": "xfs", 
-            "inode_available": 10436140, 
+            "inode_available": 10436113, 
             "inode_total": 10484720, 
-            "inode_used": 48580, 
+            "inode_used": 48607, 
             "mount": "/", 
             "options": "rw,noatime,attr2,inode64,noquota", 
-            "size_available": 19920379904, 
+            "size_available": 19925004288, 
             "size_total": 21462233088, 
             "uuid": "5f826d47-a506-4747-83c0-2f876efb2a34"
         }
@@ -896,7 +896,7 @@ Module Variables ("vars"):
     ], 
     "ansible_system_capabilities_enforced": "True", 
     "ansible_system_vendor": "Xen", 
-    "ansible_uptime_seconds": 710679, 
+    "ansible_uptime_seconds": 713144, 
     "ansible_user_dir": "/home/ec2-user", 
     "ansible_user_gecos": "EC2 Default User", 
     "ansible_user_gid": 1000, 
@@ -973,16 +973,16 @@ Module Variables ("vars"):
             "ansible_date_time": {
                 "date": "2018-04-26", 
                 "day": "26", 
-                "epoch": "1524768453", 
-                "hour": "18", 
-                "iso8601": "2018-04-26T18:47:33Z", 
-                "iso8601_basic": "20180426T184733962274", 
-                "iso8601_basic_short": "20180426T184733", 
-                "iso8601_micro": "2018-04-26T18:47:33.962347Z", 
-                "minute": "47", 
+                "epoch": "1524770918", 
+                "hour": "19", 
+                "iso8601": "2018-04-26T19:28:38Z", 
+                "iso8601_basic": "20180426T192838101137", 
+                "iso8601_basic_short": "20180426T192838", 
+                "iso8601_micro": "2018-04-26T19:28:38.101202Z", 
+                "minute": "28", 
                 "month": "04", 
-                "second": "33", 
-                "time": "18:47:33", 
+                "second": "38", 
+                "time": "19:28:38", 
                 "tz": "UTC", 
                 "tz_offset": "+0000", 
                 "weekday": "Thursday", 
@@ -1216,16 +1216,16 @@ Module Variables ("vars"):
                 "date_time": {
                     "date": "2018-04-26", 
                     "day": "26", 
-                    "epoch": "1524768453", 
-                    "hour": "18", 
-                    "iso8601": "2018-04-26T18:47:33Z", 
-                    "iso8601_basic": "20180426T184733962274", 
-                    "iso8601_basic_short": "20180426T184733", 
-                    "iso8601_micro": "2018-04-26T18:47:33.962347Z", 
-                    "minute": "47", 
+                    "epoch": "1524770918", 
+                    "hour": "19", 
+                    "iso8601": "2018-04-26T19:28:38Z", 
+                    "iso8601_basic": "20180426T192838101137", 
+                    "iso8601_basic_short": "20180426T192838", 
+                    "iso8601_micro": "2018-04-26T19:28:38.101202Z", 
+                    "minute": "28", 
                     "month": "04", 
-                    "second": "33", 
-                    "time": "18:47:33", 
+                    "second": "38", 
+                    "time": "19:28:38", 
                     "tz": "UTC", 
                     "tz_offset": "+0000", 
                     "weekday": "Thursday", 
@@ -1528,16 +1528,16 @@ Module Variables ("vars"):
                 "lsb": {}, 
                 "machine": "x86_64", 
                 "machine_id": "6376d7af4feb4cb0a80f68cca21b52e0", 
-                "memfree_mb": 2938, 
+                "memfree_mb": 2937, 
                 "memory_mb": {
                     "nocache": {
-                        "free": 3685, 
-                        "used": 261
+                        "free": 3684, 
+                        "used": 262
                     }, 
                     "real": {
-                        "free": 2938, 
+                        "free": 2937, 
                         "total": 3946, 
-                        "used": 1008
+                        "used": 1009
                     }, 
                     "swap": {
                         "cached": 0, 
@@ -1550,18 +1550,18 @@ Module Variables ("vars"):
                 "module_setup": true, 
                 "mounts": [
                     {
-                        "block_available": 4863374, 
+                        "block_available": 4864503, 
                         "block_size": 4096, 
                         "block_total": 5239803, 
-                        "block_used": 376429, 
+                        "block_used": 375300, 
                         "device": "/dev/xvda1", 
                         "fstype": "xfs", 
-                        "inode_available": 10436140, 
+                        "inode_available": 10436113, 
                         "inode_total": 10484720, 
-                        "inode_used": 48580, 
+                        "inode_used": 48607, 
                         "mount": "/", 
                         "options": "rw,noatime,attr2,inode64,noquota", 
-                        "size_available": 19920379904, 
+                        "size_available": 19925004288, 
                         "size_total": 21462233088, 
                         "uuid": "5f826d47-a506-4747-83c0-2f876efb2a34"
                     }
@@ -1623,7 +1623,7 @@ Module Variables ("vars"):
                 ], 
                 "system_capabilities_enforced": "True", 
                 "system_vendor": "Xen", 
-                "uptime_seconds": 710679, 
+                "uptime_seconds": 713144, 
                 "user_dir": "/home/ec2-user", 
                 "user_gecos": "EC2 Default User", 
                 "user_gid": 1000, 
@@ -1733,16 +1733,16 @@ Module Variables ("vars"):
             "ansible_lsb": {}, 
             "ansible_machine": "x86_64", 
             "ansible_machine_id": "6376d7af4feb4cb0a80f68cca21b52e0", 
-            "ansible_memfree_mb": 2938, 
+            "ansible_memfree_mb": 2937, 
             "ansible_memory_mb": {
                 "nocache": {
-                    "free": 3685, 
-                    "used": 261
+                    "free": 3684, 
+                    "used": 262
                 }, 
                 "real": {
-                    "free": 2938, 
+                    "free": 2937, 
                     "total": 3946, 
-                    "used": 1008
+                    "used": 1009
                 }, 
                 "swap": {
                     "cached": 0, 
@@ -1754,18 +1754,18 @@ Module Variables ("vars"):
             "ansible_memtotal_mb": 3946, 
             "ansible_mounts": [
                 {
-                    "block_available": 4863374, 
+                    "block_available": 4864503, 
                     "block_size": 4096, 
                     "block_total": 5239803, 
-                    "block_used": 376429, 
+                    "block_used": 375300, 
                     "device": "/dev/xvda1", 
                     "fstype": "xfs", 
-                    "inode_available": 10436140, 
+                    "inode_available": 10436113, 
                     "inode_total": 10484720, 
-                    "inode_used": 48580, 
+                    "inode_used": 48607, 
                     "mount": "/", 
                     "options": "rw,noatime,attr2,inode64,noquota", 
-                    "size_available": 19920379904, 
+                    "size_available": 19925004288, 
                     "size_total": 21462233088, 
                     "uuid": "5f826d47-a506-4747-83c0-2f876efb2a34"
                 }
@@ -1832,7 +1832,7 @@ Module Variables ("vars"):
             ], 
             "ansible_system_capabilities_enforced": "True", 
             "ansible_system_vendor": "Xen", 
-            "ansible_uptime_seconds": 710679, 
+            "ansible_uptime_seconds": 713144, 
             "ansible_user_dir": "/home/ec2-user", 
             "ansible_user_gecos": "EC2 Default User", 
             "ansible_user_gid": 1000, 
@@ -1886,7 +1886,7 @@ Module Variables ("vars"):
             "inventory_hostname_short": "localhost", 
             "jenkins_home": "/var/jenkins", 
             "module_setup": true, 
-            "omit": "__omit_place_holder__97eee5c62b6ef976a91b9d533fae149f22f786c3", 
+            "omit": "__omit_place_holder__eb513071cedc8bd81648ff65f8641ede2af3de18", 
             "playbook_dir": "/home/ec2-user/server-bootstraps-ansible/jenkins-node", 
             "script_paths": {
                 "env_utility_script": "/usr/local/sbin", 
@@ -1917,7 +1917,7 @@ Module Variables ("vars"):
     "inventory_hostname_short": "localhost", 
     "jenkins_home": "/var/jenkins", 
     "module_setup": true, 
-    "omit": "__omit_place_holder__97eee5c62b6ef976a91b9d533fae149f22f786c3", 
+    "omit": "__omit_place_holder__eb513071cedc8bd81648ff65f8641ede2af3de18", 
     "play_hosts": [
         "localhost"
     ], 
@@ -1929,7 +1929,7 @@ Module Variables ("vars"):
         "dependencies"
     ], 
     "role_path": "/home/ec2-user/server-bootstraps-ansible/jenkins-node/roles/os", 
-    "role_uuid": "06a77cb6-f542-d260-7d18-00000000000a", 
+    "role_uuid": "06a77cb6-f542-91af-796d-00000000000a", 
     "script_paths": {
         "env_utility_script": "/usr/local/sbin", 
         "jenkins_agent_wrapper": "{{ jenkins_home }}/bin"
@@ -2009,16 +2009,16 @@ HOST Variables ("hostvars"):
         "ansible_date_time": {
             "date": "2018-04-26", 
             "day": "26", 
-            "epoch": "1524768453", 
-            "hour": "18", 
-            "iso8601": "2018-04-26T18:47:33Z", 
-            "iso8601_basic": "20180426T184733962274", 
-            "iso8601_basic_short": "20180426T184733", 
-            "iso8601_micro": "2018-04-26T18:47:33.962347Z", 
-            "minute": "47", 
+            "epoch": "1524770918", 
+            "hour": "19", 
+            "iso8601": "2018-04-26T19:28:38Z", 
+            "iso8601_basic": "20180426T192838101137", 
+            "iso8601_basic_short": "20180426T192838", 
+            "iso8601_micro": "2018-04-26T19:28:38.101202Z", 
+            "minute": "28", 
             "month": "04", 
-            "second": "33", 
-            "time": "18:47:33", 
+            "second": "38", 
+            "time": "19:28:38", 
             "tz": "UTC", 
             "tz_offset": "+0000", 
             "weekday": "Thursday", 
@@ -2252,16 +2252,16 @@ HOST Variables ("hostvars"):
             "date_time": {
                 "date": "2018-04-26", 
                 "day": "26", 
-                "epoch": "1524768453", 
-                "hour": "18", 
-                "iso8601": "2018-04-26T18:47:33Z", 
-                "iso8601_basic": "20180426T184733962274", 
-                "iso8601_basic_short": "20180426T184733", 
-                "iso8601_micro": "2018-04-26T18:47:33.962347Z", 
-                "minute": "47", 
+                "epoch": "1524770918", 
+                "hour": "19", 
+                "iso8601": "2018-04-26T19:28:38Z", 
+                "iso8601_basic": "20180426T192838101137", 
+                "iso8601_basic_short": "20180426T192838", 
+                "iso8601_micro": "2018-04-26T19:28:38.101202Z", 
+                "minute": "28", 
                 "month": "04", 
-                "second": "33", 
-                "time": "18:47:33", 
+                "second": "38", 
+                "time": "19:28:38", 
                 "tz": "UTC", 
                 "tz_offset": "+0000", 
                 "weekday": "Thursday", 
@@ -2564,16 +2564,16 @@ HOST Variables ("hostvars"):
             "lsb": {}, 
             "machine": "x86_64", 
             "machine_id": "6376d7af4feb4cb0a80f68cca21b52e0", 
-            "memfree_mb": 2938, 
+            "memfree_mb": 2937, 
             "memory_mb": {
                 "nocache": {
-                    "free": 3685, 
-                    "used": 261
+                    "free": 3684, 
+                    "used": 262
                 }, 
                 "real": {
-                    "free": 2938, 
+                    "free": 2937, 
                     "total": 3946, 
-                    "used": 1008
+                    "used": 1009
                 }, 
                 "swap": {
                     "cached": 0, 
@@ -2586,18 +2586,18 @@ HOST Variables ("hostvars"):
             "module_setup": true, 
             "mounts": [
                 {
-                    "block_available": 4863374, 
+                    "block_available": 4864503, 
                     "block_size": 4096, 
                     "block_total": 5239803, 
-                    "block_used": 376429, 
+                    "block_used": 375300, 
                     "device": "/dev/xvda1", 
                     "fstype": "xfs", 
-                    "inode_available": 10436140, 
+                    "inode_available": 10436113, 
                     "inode_total": 10484720, 
-                    "inode_used": 48580, 
+                    "inode_used": 48607, 
                     "mount": "/", 
                     "options": "rw,noatime,attr2,inode64,noquota", 
-                    "size_available": 19920379904, 
+                    "size_available": 19925004288, 
                     "size_total": 21462233088, 
                     "uuid": "5f826d47-a506-4747-83c0-2f876efb2a34"
                 }
@@ -2659,7 +2659,7 @@ HOST Variables ("hostvars"):
             ], 
             "system_capabilities_enforced": "True", 
             "system_vendor": "Xen", 
-            "uptime_seconds": 710679, 
+            "uptime_seconds": 713144, 
             "user_dir": "/home/ec2-user", 
             "user_gecos": "EC2 Default User", 
             "user_gid": 1000, 
@@ -2769,16 +2769,16 @@ HOST Variables ("hostvars"):
         "ansible_lsb": {}, 
         "ansible_machine": "x86_64", 
         "ansible_machine_id": "6376d7af4feb4cb0a80f68cca21b52e0", 
-        "ansible_memfree_mb": 2938, 
+        "ansible_memfree_mb": 2937, 
         "ansible_memory_mb": {
             "nocache": {
-                "free": 3685, 
-                "used": 261
+                "free": 3684, 
+                "used": 262
             }, 
             "real": {
-                "free": 2938, 
+                "free": 2937, 
                 "total": 3946, 
-                "used": 1008
+                "used": 1009
             }, 
             "swap": {
                 "cached": 0, 
@@ -2790,18 +2790,18 @@ HOST Variables ("hostvars"):
         "ansible_memtotal_mb": 3946, 
         "ansible_mounts": [
             {
-                "block_available": 4863374, 
+                "block_available": 4864503, 
                 "block_size": 4096, 
                 "block_total": 5239803, 
-                "block_used": 376429, 
+                "block_used": 375300, 
                 "device": "/dev/xvda1", 
                 "fstype": "xfs", 
-                "inode_available": 10436140, 
+                "inode_available": 10436113, 
                 "inode_total": 10484720, 
-                "inode_used": 48580, 
+                "inode_used": 48607, 
                 "mount": "/", 
                 "options": "rw,noatime,attr2,inode64,noquota", 
-                "size_available": 19920379904, 
+                "size_available": 19925004288, 
                 "size_total": 21462233088, 
                 "uuid": "5f826d47-a506-4747-83c0-2f876efb2a34"
             }
@@ -2868,7 +2868,7 @@ HOST Variables ("hostvars"):
         ], 
         "ansible_system_capabilities_enforced": "True", 
         "ansible_system_vendor": "Xen", 
-        "ansible_uptime_seconds": 710679, 
+        "ansible_uptime_seconds": 713144, 
         "ansible_user_dir": "/home/ec2-user", 
         "ansible_user_gecos": "EC2 Default User", 
         "ansible_user_gid": 1000, 
@@ -2922,7 +2922,7 @@ HOST Variables ("hostvars"):
         "inventory_hostname_short": "localhost", 
         "jenkins_home": "/var/jenkins", 
         "module_setup": true, 
-        "omit": "__omit_place_holder__97eee5c62b6ef976a91b9d533fae149f22f786c3", 
+        "omit": "__omit_place_holder__eb513071cedc8bd81648ff65f8641ede2af3de18", 
         "playbook_dir": "/home/ec2-user/server-bootstraps-ansible/jenkins-node", 
         "script_paths": {
             "env_utility_script": "/usr/local/sbin", 
