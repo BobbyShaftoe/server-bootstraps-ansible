@@ -17,20 +17,13 @@
     - "{{ users_groups_map }}"
 
 
-# - name: "Create user groups"
-#   group:
-#     name: "{{ item.2 }}"
-#     state: present
-#   with_items:
-#     - "{{ users_groups }}"
-# 
-# 
-# - name: "Create users"
-#   user:
-#     name: "{{ item.1 }}"
-#     group: "{{ item.2 }}"
-#     home: "{{ item.3 }}"
-#     state: present
-#   with_items:
-#     - "{{ users_groups }}"
-# 
+- name: "Create bin directory in jenkins home"
+  file:
+    path: "{{ jenkins_home }}/bin"
+    state: directory
+    owner: jenkins
+    group: jenkins
+    mode: 0755
+
+
+

@@ -8,23 +8,25 @@ system_packages:
   - 'git'
   - 'ntpdate'
 
-artefact_src_path: 'https://s3.amazonaws.com/artefact-bucket-store'
+artefact_src_path: 'https://s3.amazonaws.com/hn-artefact-store'
 
 artefact_paths:
   jenkins:
-    - [ 'jenkins-node/agent.jar', '/agent' ]
+    - [ 'jenkins/jar/agent.jar', '/var/jenkins/bin/agent.jar' ]
 
 script_paths:
-  jenkins_agent_wrapper: '/usr/local/sbin'
+  jenkins_agent_wrapper: "{{ jenkins_home }}/bin"
   env_utility_script: '/usr/local/sbin'
 
-users_groups:
-  - [ 'jenkins', 'jenkins', '/home/jenkins' ]
+#users_groups:
+#  - [ 'jenkins', 'jenkins', '/home/jenkins' ]
+
+jenkins_home: /var/jenkins
 
 users_groups_map:
   - username: jenkins
     group: jenkins
-    homedir: /var/jenkins
+    homedir: "{{ jenkins_home }}"
   - username: loguser
     group: loguser
     homedir: /home/loguser

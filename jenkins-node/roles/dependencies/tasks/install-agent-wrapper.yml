@@ -3,23 +3,23 @@
 - name: "Copy environment utility script to system"
   copy:
     src: env_info_helper.py
-    dest: {{ script_paths.env_utility_script }}
+    dest: "{{ script_paths.env_utility_script }}"
     owner: jenkins
     group: jenkins
     mode: 0755
 
 - name: "Lookup java path"
-  command: "{{ script_paths.env_utility_script/env_info_helper.py }} real_path java"
+  command: "{{ script_paths.env_utility_script }}/env_info_helper.py real_path java"
   register: tmp_java_path
 
 - name: "Set java path fact"
   set_fact:
-    java_path: "{{ tmp_java_path.stdout }}"
+    java_path: "{{ tmp_java_path.stdout | regex_replace('/bin/.*', '') }}"
 
 - name: "Install agent wrapper"
   template:
     src: templates/agent_wrapper.sh
-    dest: {{ script_paths.jenkins_agent_wrapper }}
+    dest: "{{ script_paths.jenkins_agent_wrapper }}"
     owner: jenkins
     group: jenkins
     mode: 0755

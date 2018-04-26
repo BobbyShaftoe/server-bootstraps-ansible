@@ -1,0 +1,11 @@
+---
+
+- name: "Download and install agent"
+  get_url:
+    url: "{{ artefact_src_path }}/{{ artefact_paths.jenkins.0.0 }}"
+    dest: "{{ artefact_paths.jenkins.0.1 }}"
+    owner: jenkins
+    group: jenkins
+    mode: 0755
+
+

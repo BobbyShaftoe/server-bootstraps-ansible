@@ -26,23 +26,23 @@ Module Variables ("vars"):
     }, 
     "ansible_connection": "local", 
     "ansible_date_time": {
-        "date": "2018-04-18", 
-        "day": "18", 
-        "epoch": "1524082521", 
-        "hour": "20", 
-        "iso8601": "2018-04-18T20:15:21Z", 
-        "iso8601_basic": "20180418T201521298060", 
-        "iso8601_basic_short": "20180418T201521", 
-        "iso8601_micro": "2018-04-18T20:15:21.298120Z", 
-        "minute": "15", 
+        "date": "2018-04-26", 
+        "day": "26", 
+        "epoch": "1524768453", 
+        "hour": "18", 
+        "iso8601": "2018-04-26T18:47:33Z", 
+        "iso8601_basic": "20180426T184733962274", 
+        "iso8601_basic_short": "20180426T184733", 
+        "iso8601_micro": "2018-04-26T18:47:33.962347Z", 
+        "minute": "47", 
         "month": "04", 
-        "second": "21", 
-        "time": "20:15:21", 
+        "second": "33", 
+        "time": "18:47:33", 
         "tz": "UTC", 
         "tz_offset": "+0000", 
-        "weekday": "Wednesday", 
-        "weekday_number": "3", 
-        "weeknumber": "16", 
+        "weekday": "Thursday", 
+        "weekday_number": "4", 
+        "weeknumber": "17", 
         "year": "2018"
     }, 
     "ansible_default_ipv4": {
@@ -143,7 +143,7 @@ Module Variables ("vars"):
         "HISTCONTROL": "ignoredups", 
         "HISTSIZE": "1000", 
         "HOME": "/home/ec2-user", 
-        "HOSTNAME": "ip-10-30-0-60.ec2.internal", 
+        "HOSTNAME": "jenkins-node.hn-development.net", 
         "LANG": "en_AU.UTF-8", 
         "LC_CTYPE": "en_AU.UTF-8", 
         "LESSOPEN": "||/usr/bin/lesspipe.sh %s", 
@@ -154,13 +154,13 @@ Module Variables ("vars"):
         "PWD": "/home/ec2-user/server-bootstraps-ansible/jenkins-node", 
         "SHELL": "/bin/bash", 
         "SHLVL": "3", 
-        "SSH_CLIENT": "10.1.0.20 62099 22", 
-        "SSH_CONNECTION": "10.1.0.20 62099 10.30.0.60 22", 
+        "SSH_CLIENT": "10.1.0.20 58986 22", 
+        "SSH_CONNECTION": "10.1.0.20 58986 10.30.0.60 22", 
         "SSH_TTY": "/dev/pts/0", 
         "TERM": "xterm-256color", 
         "USER": "ec2-user", 
         "XDG_RUNTIME_DIR": "/run/user/1000", 
-        "XDG_SESSION_ID": "3", 
+        "XDG_SESSION_ID": "1359", 
         "_": "/usr/bin/python"
     }, 
     "ansible_eth0": {
@@ -269,23 +269,23 @@ Module Variables ("vars"):
             "root": "UUID=5f826d47-a506-4747-83c0-2f876efb2a34"
         }, 
         "date_time": {
-            "date": "2018-04-18", 
-            "day": "18", 
-            "epoch": "1524082521", 
-            "hour": "20", 
-            "iso8601": "2018-04-18T20:15:21Z", 
-            "iso8601_basic": "20180418T201521298060", 
-            "iso8601_basic_short": "20180418T201521", 
-            "iso8601_micro": "2018-04-18T20:15:21.298120Z", 
-            "minute": "15", 
+            "date": "2018-04-26", 
+            "day": "26", 
+            "epoch": "1524768453", 
+            "hour": "18", 
+            "iso8601": "2018-04-26T18:47:33Z", 
+            "iso8601_basic": "20180426T184733962274", 
+            "iso8601_basic_short": "20180426T184733", 
+            "iso8601_micro": "2018-04-26T18:47:33.962347Z", 
+            "minute": "47", 
             "month": "04", 
-            "second": "21", 
-            "time": "20:15:21", 
+            "second": "33", 
+            "time": "18:47:33", 
             "tz": "UTC", 
             "tz_offset": "+0000", 
-            "weekday": "Wednesday", 
-            "weekday_number": "3", 
-            "weeknumber": "16", 
+            "weekday": "Thursday", 
+            "weekday_number": "4", 
+            "weeknumber": "17", 
             "year": "2018"
         }, 
         "default_ipv4": {
@@ -385,7 +385,7 @@ Module Variables ("vars"):
             "HISTCONTROL": "ignoredups", 
             "HISTSIZE": "1000", 
             "HOME": "/home/ec2-user", 
-            "HOSTNAME": "ip-10-30-0-60.ec2.internal", 
+            "HOSTNAME": "jenkins-node.hn-development.net", 
             "LANG": "en_AU.UTF-8", 
             "LC_CTYPE": "en_AU.UTF-8", 
             "LESSOPEN": "||/usr/bin/lesspipe.sh %s", 
@@ -396,13 +396,13 @@ Module Variables ("vars"):
             "PWD": "/home/ec2-user/server-bootstraps-ansible/jenkins-node", 
             "SHELL": "/bin/bash", 
             "SHLVL": "3", 
-            "SSH_CLIENT": "10.1.0.20 62099 22", 
-            "SSH_CONNECTION": "10.1.0.20 62099 10.30.0.60 22", 
+            "SSH_CLIENT": "10.1.0.20 58986 22", 
+            "SSH_CONNECTION": "10.1.0.20 58986 10.30.0.60 22", 
             "SSH_TTY": "/dev/pts/0", 
             "TERM": "xterm-256color", 
             "USER": "ec2-user", 
             "XDG_RUNTIME_DIR": "/run/user/1000", 
-            "XDG_SESSION_ID": "3", 
+            "XDG_SESSION_ID": "1359", 
             "_": "/usr/bin/python"
         }, 
         "eth0": {
@@ -583,16 +583,16 @@ Module Variables ("vars"):
         "lsb": {}, 
         "machine": "x86_64", 
         "machine_id": "6376d7af4feb4cb0a80f68cca21b52e0", 
-        "memfree_mb": 3102, 
+        "memfree_mb": 2938, 
         "memory_mb": {
             "nocache": {
-                "free": 3693, 
-                "used": 253
+                "free": 3685, 
+                "used": 261
             }, 
             "real": {
-                "free": 3102, 
+                "free": 2938, 
                 "total": 3946, 
-                "used": 844
+                "used": 1008
             }, 
             "swap": {
                 "cached": 0, 
@@ -605,18 +605,18 @@ Module Variables ("vars"):
         "module_setup": true, 
         "mounts": [
             {
-                "block_available": 4882926, 
+                "block_available": 4863374, 
                 "block_size": 4096, 
                 "block_total": 5239803, 
-                "block_used": 356877, 
+                "block_used": 376429, 
                 "device": "/dev/xvda1", 
                 "fstype": "xfs", 
-                "inode_available": 10436297, 
+                "inode_available": 10436140, 
                 "inode_total": 10484720, 
-                "inode_used": 48423, 
+                "inode_used": 48580, 
                 "mount": "/", 
                 "options": "rw,noatime,attr2,inode64,noquota", 
-                "size_available": 20000464896, 
+                "size_available": 19920379904, 
                 "size_total": 21462233088, 
                 "uuid": "5f826d47-a506-4747-83c0-2f876efb2a34"
             }
@@ -678,7 +678,7 @@ Module Variables ("vars"):
         ], 
         "system_capabilities_enforced": "True", 
         "system_vendor": "Xen", 
-        "uptime_seconds": 24747, 
+        "uptime_seconds": 710679, 
         "user_dir": "/home/ec2-user", 
         "user_gecos": "EC2 Default User", 
         "user_gid": 1000, 
@@ -788,16 +788,16 @@ Module Variables ("vars"):
     "ansible_lsb": {}, 
     "ansible_machine": "x86_64", 
     "ansible_machine_id": "6376d7af4feb4cb0a80f68cca21b52e0", 
-    "ansible_memfree_mb": 3102, 
+    "ansible_memfree_mb": 2938, 
     "ansible_memory_mb": {
         "nocache": {
-            "free": 3693, 
-            "used": 253
+            "free": 3685, 
+            "used": 261
         }, 
         "real": {
-            "free": 3102, 
+            "free": 2938, 
             "total": 3946, 
-            "used": 844
+            "used": 1008
         }, 
         "swap": {
             "cached": 0, 
@@ -809,18 +809,18 @@ Module Variables ("vars"):
     "ansible_memtotal_mb": 3946, 
     "ansible_mounts": [
         {
-            "block_available": 4882926, 
+            "block_available": 4863374, 
             "block_size": 4096, 
             "block_total": 5239803, 
-            "block_used": 356877, 
+            "block_used": 376429, 
             "device": "/dev/xvda1", 
             "fstype": "xfs", 
-            "inode_available": 10436297, 
+            "inode_available": 10436140, 
             "inode_total": 10484720, 
-            "inode_used": 48423, 
+            "inode_used": 48580, 
             "mount": "/", 
             "options": "rw,noatime,attr2,inode64,noquota", 
-            "size_available": 20000464896, 
+            "size_available": 19920379904, 
             "size_total": 21462233088, 
             "uuid": "5f826d47-a506-4747-83c0-2f876efb2a34"
         }
@@ -896,7 +896,7 @@ Module Variables ("vars"):
     ], 
     "ansible_system_capabilities_enforced": "True", 
     "ansible_system_vendor": "Xen", 
-    "ansible_uptime_seconds": 24747, 
+    "ansible_uptime_seconds": 710679, 
     "ansible_user_dir": "/home/ec2-user", 
     "ansible_user_gecos": "EC2 Default User", 
     "ansible_user_gid": 1000, 
@@ -914,17 +914,15 @@ Module Variables ("vars"):
     }, 
     "ansible_virtualization_role": "guest", 
     "ansible_virtualization_type": "xen", 
-    "arefact_paths": [
-        [
-            "jenkins-node/agent.jar", 
-            "/agent"
-        ], 
-        [
-            "jenkins-node/agent_wrapper.sh", 
-            "/usr/local/sbin"
+    "artefact_paths": {
+        "jenkins": [
+            [
+                "jenkins/jar/agent.jar", 
+                "/var/jenkins/bin/agent.jar"
+            ]
         ]
-    ], 
-    "artefact_src_path": "https://s3.amazonaws.com/artefact-bucket-store", 
+    }, 
+    "artefact_src_path": "https://s3.amazonaws.com/hn-artefact-store", 
     "environment": [], 
     "gather_subset": [
         "all"
@@ -973,23 +971,23 @@ Module Variables ("vars"):
             }, 
             "ansible_connection": "local", 
             "ansible_date_time": {
-                "date": "2018-04-18", 
-                "day": "18", 
-                "epoch": "1524082521", 
-                "hour": "20", 
-                "iso8601": "2018-04-18T20:15:21Z", 
-                "iso8601_basic": "20180418T201521298060", 
-                "iso8601_basic_short": "20180418T201521", 
-                "iso8601_micro": "2018-04-18T20:15:21.298120Z", 
-                "minute": "15", 
+                "date": "2018-04-26", 
+                "day": "26", 
+                "epoch": "1524768453", 
+                "hour": "18", 
+                "iso8601": "2018-04-26T18:47:33Z", 
+                "iso8601_basic": "20180426T184733962274", 
+                "iso8601_basic_short": "20180426T184733", 
+                "iso8601_micro": "2018-04-26T18:47:33.962347Z", 
+                "minute": "47", 
                 "month": "04", 
-                "second": "21", 
-                "time": "20:15:21", 
+                "second": "33", 
+                "time": "18:47:33", 
                 "tz": "UTC", 
                 "tz_offset": "+0000", 
-                "weekday": "Wednesday", 
-                "weekday_number": "3", 
-                "weeknumber": "16", 
+                "weekday": "Thursday", 
+                "weekday_number": "4", 
+                "weeknumber": "17", 
                 "year": "2018"
             }, 
             "ansible_default_ipv4": {
@@ -1090,7 +1088,7 @@ Module Variables ("vars"):
                 "HISTCONTROL": "ignoredups", 
                 "HISTSIZE": "1000", 
                 "HOME": "/home/ec2-user", 
-                "HOSTNAME": "ip-10-30-0-60.ec2.internal", 
+                "HOSTNAME": "jenkins-node.hn-development.net", 
                 "LANG": "en_AU.UTF-8", 
                 "LC_CTYPE": "en_AU.UTF-8", 
                 "LESSOPEN": "||/usr/bin/lesspipe.sh %s", 
@@ -1101,13 +1099,13 @@ Module Variables ("vars"):
                 "PWD": "/home/ec2-user/server-bootstraps-ansible/jenkins-node", 
                 "SHELL": "/bin/bash", 
                 "SHLVL": "3", 
-                "SSH_CLIENT": "10.1.0.20 62099 22", 
-                "SSH_CONNECTION": "10.1.0.20 62099 10.30.0.60 22", 
+                "SSH_CLIENT": "10.1.0.20 58986 22", 
+                "SSH_CONNECTION": "10.1.0.20 58986 10.30.0.60 22", 
                 "SSH_TTY": "/dev/pts/0", 
                 "TERM": "xterm-256color", 
                 "USER": "ec2-user", 
                 "XDG_RUNTIME_DIR": "/run/user/1000", 
-                "XDG_SESSION_ID": "3", 
+                "XDG_SESSION_ID": "1359", 
                 "_": "/usr/bin/python"
             }, 
             "ansible_eth0": {
@@ -1216,23 +1214,23 @@ Module Variables ("vars"):
                     "root": "UUID=5f826d47-a506-4747-83c0-2f876efb2a34"
                 }, 
                 "date_time": {
-                    "date": "2018-04-18", 
-                    "day": "18", 
-                    "epoch": "1524082521", 
-                    "hour": "20", 
-                    "iso8601": "2018-04-18T20:15:21Z", 
-                    "iso8601_basic": "20180418T201521298060", 
-                    "iso8601_basic_short": "20180418T201521", 
-                    "iso8601_micro": "2018-04-18T20:15:21.298120Z", 
-                    "minute": "15", 
+                    "date": "2018-04-26", 
+                    "day": "26", 
+                    "epoch": "1524768453", 
+                    "hour": "18", 
+                    "iso8601": "2018-04-26T18:47:33Z", 
+                    "iso8601_basic": "20180426T184733962274", 
+                    "iso8601_basic_short": "20180426T184733", 
+                    "iso8601_micro": "2018-04-26T18:47:33.962347Z", 
+                    "minute": "47", 
                     "month": "04", 
-                    "second": "21", 
-                    "time": "20:15:21", 
+                    "second": "33", 
+                    "time": "18:47:33", 
                     "tz": "UTC", 
                     "tz_offset": "+0000", 
-                    "weekday": "Wednesday", 
-                    "weekday_number": "3", 
-                    "weeknumber": "16", 
+                    "weekday": "Thursday", 
+                    "weekday_number": "4", 
+                    "weeknumber": "17", 
                     "year": "2018"
                 }, 
                 "default_ipv4": {
@@ -1332,7 +1330,7 @@ Module Variables ("vars"):
                     "HISTCONTROL": "ignoredups", 
                     "HISTSIZE": "1000", 
                     "HOME": "/home/ec2-user", 
-                    "HOSTNAME": "ip-10-30-0-60.ec2.internal", 
+                    "HOSTNAME": "jenkins-node.hn-development.net", 
                     "LANG": "en_AU.UTF-8", 
                     "LC_CTYPE": "en_AU.UTF-8", 
                     "LESSOPEN": "||/usr/bin/lesspipe.sh %s", 
@@ -1343,13 +1341,13 @@ Module Variables ("vars"):
                     "PWD": "/home/ec2-user/server-bootstraps-ansible/jenkins-node", 
                     "SHELL": "/bin/bash", 
                     "SHLVL": "3", 
-                    "SSH_CLIENT": "10.1.0.20 62099 22", 
-                    "SSH_CONNECTION": "10.1.0.20 62099 10.30.0.60 22", 
+                    "SSH_CLIENT": "10.1.0.20 58986 22", 
+                    "SSH_CONNECTION": "10.1.0.20 58986 10.30.0.60 22", 
                     "SSH_TTY": "/dev/pts/0", 
                     "TERM": "xterm-256color", 
                     "USER": "ec2-user", 
                     "XDG_RUNTIME_DIR": "/run/user/1000", 
-                    "XDG_SESSION_ID": "3", 
+                    "XDG_SESSION_ID": "1359", 
                     "_": "/usr/bin/python"
                 }, 
                 "eth0": {
@@ -1530,16 +1528,16 @@ Module Variables ("vars"):
                 "lsb": {}, 
                 "machine": "x86_64", 
                 "machine_id": "6376d7af4feb4cb0a80f68cca21b52e0", 
-                "memfree_mb": 3102, 
+                "memfree_mb": 2938, 
                 "memory_mb": {
                     "nocache": {
-                        "free": 3693, 
-                        "used": 253
+                        "free": 3685, 
+                        "used": 261
                     }, 
                     "real": {
-                        "free": 3102, 
+                        "free": 2938, 
                         "total": 3946, 
-                        "used": 844
+                        "used": 1008
                     }, 
                     "swap": {
                         "cached": 0, 
@@ -1552,18 +1550,18 @@ Module Variables ("vars"):
                 "module_setup": true, 
                 "mounts": [
                     {
-                        "block_available": 4882926, 
+                        "block_available": 4863374, 
                         "block_size": 4096, 
                         "block_total": 5239803, 
-                        "block_used": 356877, 
+                        "block_used": 376429, 
                         "device": "/dev/xvda1", 
                         "fstype": "xfs", 
-                        "inode_available": 10436297, 
+                        "inode_available": 10436140, 
                         "inode_total": 10484720, 
-                        "inode_used": 48423, 
+                        "inode_used": 48580, 
                         "mount": "/", 
                         "options": "rw,noatime,attr2,inode64,noquota", 
-                        "size_available": 20000464896, 
+                        "size_available": 19920379904, 
                         "size_total": 21462233088, 
                         "uuid": "5f826d47-a506-4747-83c0-2f876efb2a34"
                     }
@@ -1625,7 +1623,7 @@ Module Variables ("vars"):
                 ], 
                 "system_capabilities_enforced": "True", 
                 "system_vendor": "Xen", 
-                "uptime_seconds": 24747, 
+                "uptime_seconds": 710679, 
                 "user_dir": "/home/ec2-user", 
                 "user_gecos": "EC2 Default User", 
                 "user_gid": 1000, 
@@ -1735,16 +1733,16 @@ Module Variables ("vars"):
             "ansible_lsb": {}, 
             "ansible_machine": "x86_64", 
             "ansible_machine_id": "6376d7af4feb4cb0a80f68cca21b52e0", 
-            "ansible_memfree_mb": 3102, 
+            "ansible_memfree_mb": 2938, 
             "ansible_memory_mb": {
                 "nocache": {
-                    "free": 3693, 
-                    "used": 253
+                    "free": 3685, 
+                    "used": 261
                 }, 
                 "real": {
-                    "free": 3102, 
+                    "free": 2938, 
                     "total": 3946, 
-                    "used": 844
+                    "used": 1008
                 }, 
                 "swap": {
                     "cached": 0, 
@@ -1756,18 +1754,18 @@ Module Variables ("vars"):
             "ansible_memtotal_mb": 3946, 
             "ansible_mounts": [
                 {
-                    "block_available": 4882926, 
+                    "block_available": 4863374, 
                     "block_size": 4096, 
                     "block_total": 5239803, 
-                    "block_used": 356877, 
+                    "block_used": 376429, 
                     "device": "/dev/xvda1", 
                     "fstype": "xfs", 
-                    "inode_available": 10436297, 
+                    "inode_available": 10436140, 
                     "inode_total": 10484720, 
-                    "inode_used": 48423, 
+                    "inode_used": 48580, 
                     "mount": "/", 
                     "options": "rw,noatime,attr2,inode64,noquota", 
-                    "size_available": 20000464896, 
+                    "size_available": 19920379904, 
                     "size_total": 21462233088, 
                     "uuid": "5f826d47-a506-4747-83c0-2f876efb2a34"
                 }
@@ -1834,7 +1832,7 @@ Module Variables ("vars"):
             ], 
             "ansible_system_capabilities_enforced": "True", 
             "ansible_system_vendor": "Xen", 
-            "ansible_uptime_seconds": 24747, 
+            "ansible_uptime_seconds": 710679, 
             "ansible_user_dir": "/home/ec2-user", 
             "ansible_user_gecos": "EC2 Default User", 
             "ansible_user_gid": 1000, 
@@ -1852,17 +1850,15 @@ Module Variables ("vars"):
             }, 
             "ansible_virtualization_role": "guest", 
             "ansible_virtualization_type": "xen", 
-            "arefact_paths": [
-                [
-                    "jenkins-node/agent.jar", 
-                    "/agent"
-                ], 
-                [
-                    "jenkins-node/agent_wrapper.sh", 
-                    "/usr/local/sbin"
+            "artefact_paths": {
+                "jenkins": [
+                    [
+                        "jenkins/jar/agent.jar", 
+                        "/var/jenkins/bin/agent.jar"
+                    ]
                 ]
-            ], 
-            "artefact_src_path": "https://s3.amazonaws.com/artefact-bucket-store", 
+            }, 
+            "artefact_src_path": "https://s3.amazonaws.com/hn-artefact-store", 
             "gather_subset": [
                 "all"
             ], 
@@ -1888,20 +1884,18 @@ Module Variables ("vars"):
             "inventory_file": "/home/ec2-user/server-bootstraps-ansible/jenkins-node/hosts.ini", 
             "inventory_hostname": "localhost", 
             "inventory_hostname_short": "localhost", 
+            "jenkins_home": "/var/jenkins", 
             "module_setup": true, 
-            "omit": "__omit_place_holder__853a203e7448d6788ccfbce6a874e2e1e69d9c21", 
+            "omit": "__omit_place_holder__97eee5c62b6ef976a91b9d533fae149f22f786c3", 
             "playbook_dir": "/home/ec2-user/server-bootstraps-ansible/jenkins-node", 
+            "script_paths": {
+                "env_utility_script": "/usr/local/sbin", 
+                "jenkins_agent_wrapper": "/var/jenkins/bin"
+            }, 
             "system_packages": [
                 "java-1.8.0", 
                 "git", 
                 "ntpdate"
-            ], 
-            "users_groups": [
-                [
-                    "jenkins", 
-                    "jenkins", 
-                    "/home/jenkins"
-                ]
             ], 
             "users_groups_map": [
                 {
@@ -1921,8 +1915,9 @@ Module Variables ("vars"):
     "inventory_file": "/home/ec2-user/server-bootstraps-ansible/jenkins-node/hosts.ini", 
     "inventory_hostname": "localhost", 
     "inventory_hostname_short": "localhost", 
+    "jenkins_home": "/var/jenkins", 
     "module_setup": true, 
-    "omit": "__omit_place_holder__853a203e7448d6788ccfbce6a874e2e1e69d9c21", 
+    "omit": "__omit_place_holder__97eee5c62b6ef976a91b9d533fae149f22f786c3", 
     "play_hosts": [
         "localhost"
     ], 
@@ -1934,23 +1929,20 @@ Module Variables ("vars"):
         "dependencies"
     ], 
     "role_path": "/home/ec2-user/server-bootstraps-ansible/jenkins-node/roles/os", 
-    "role_uuid": "06a77cb6-f542-f12b-07a6-00000000000a", 
+    "role_uuid": "06a77cb6-f542-d260-7d18-00000000000a", 
+    "script_paths": {
+        "env_utility_script": "/usr/local/sbin", 
+        "jenkins_agent_wrapper": "{{ jenkins_home }}/bin"
+    }, 
     "system_packages": [
         "java-1.8.0", 
         "git", 
         "ntpdate"
     ], 
-    "users_groups": [
-        [
-            "jenkins", 
-            "jenkins", 
-            "/home/jenkins"
-        ]
-    ], 
     "users_groups_map": [
         {
             "group": "jenkins", 
-            "homedir": "/var/jenkins", 
+            "homedir": "{{ jenkins_home }}", 
             "username": "jenkins"
         }, 
         {
@@ -2015,23 +2007,23 @@ HOST Variables ("hostvars"):
         }, 
         "ansible_connection": "local", 
         "ansible_date_time": {
-            "date": "2018-04-18", 
-            "day": "18", 
-            "epoch": "1524082521", 
-            "hour": "20", 
-            "iso8601": "2018-04-18T20:15:21Z", 
-            "iso8601_basic": "20180418T201521298060", 
-            "iso8601_basic_short": "20180418T201521", 
-            "iso8601_micro": "2018-04-18T20:15:21.298120Z", 
-            "minute": "15", 
+            "date": "2018-04-26", 
+            "day": "26", 
+            "epoch": "1524768453", 
+            "hour": "18", 
+            "iso8601": "2018-04-26T18:47:33Z", 
+            "iso8601_basic": "20180426T184733962274", 
+            "iso8601_basic_short": "20180426T184733", 
+            "iso8601_micro": "2018-04-26T18:47:33.962347Z", 
+            "minute": "47", 
             "month": "04", 
-            "second": "21", 
-            "time": "20:15:21", 
+            "second": "33", 
+            "time": "18:47:33", 
             "tz": "UTC", 
             "tz_offset": "+0000", 
-            "weekday": "Wednesday", 
-            "weekday_number": "3", 
-            "weeknumber": "16", 
+            "weekday": "Thursday", 
+            "weekday_number": "4", 
+            "weeknumber": "17", 
             "year": "2018"
         }, 
         "ansible_default_ipv4": {
@@ -2132,7 +2124,7 @@ HOST Variables ("hostvars"):
             "HISTCONTROL": "ignoredups", 
             "HISTSIZE": "1000", 
             "HOME": "/home/ec2-user", 
-            "HOSTNAME": "ip-10-30-0-60.ec2.internal", 
+            "HOSTNAME": "jenkins-node.hn-development.net", 
             "LANG": "en_AU.UTF-8", 
             "LC_CTYPE": "en_AU.UTF-8", 
             "LESSOPEN": "||/usr/bin/lesspipe.sh %s", 
@@ -2143,13 +2135,13 @@ HOST Variables ("hostvars"):
             "PWD": "/home/ec2-user/server-bootstraps-ansible/jenkins-node", 
             "SHELL": "/bin/bash", 
             "SHLVL": "3", 
-            "SSH_CLIENT": "10.1.0.20 62099 22", 
-            "SSH_CONNECTION": "10.1.0.20 62099 10.30.0.60 22", 
+            "SSH_CLIENT": "10.1.0.20 58986 22", 
+            "SSH_CONNECTION": "10.1.0.20 58986 10.30.0.60 22", 
             "SSH_TTY": "/dev/pts/0", 
             "TERM": "xterm-256color", 
             "USER": "ec2-user", 
             "XDG_RUNTIME_DIR": "/run/user/1000", 
-            "XDG_SESSION_ID": "3", 
+            "XDG_SESSION_ID": "1359", 
             "_": "/usr/bin/python"
         }, 
         "ansible_eth0": {
@@ -2258,23 +2250,23 @@ HOST Variables ("hostvars"):
                 "root": "UUID=5f826d47-a506-4747-83c0-2f876efb2a34"
             }, 
             "date_time": {
-                "date": "2018-04-18", 
-                "day": "18", 
-                "epoch": "1524082521", 
-                "hour": "20", 
-                "iso8601": "2018-04-18T20:15:21Z", 
-                "iso8601_basic": "20180418T201521298060", 
-                "iso8601_basic_short": "20180418T201521", 
-                "iso8601_micro": "2018-04-18T20:15:21.298120Z", 
-                "minute": "15", 
+                "date": "2018-04-26", 
+                "day": "26", 
+                "epoch": "1524768453", 
+                "hour": "18", 
+                "iso8601": "2018-04-26T18:47:33Z", 
+                "iso8601_basic": "20180426T184733962274", 
+                "iso8601_basic_short": "20180426T184733", 
+                "iso8601_micro": "2018-04-26T18:47:33.962347Z", 
+                "minute": "47", 
                 "month": "04", 
-                "second": "21", 
-                "time": "20:15:21", 
+                "second": "33", 
+                "time": "18:47:33", 
                 "tz": "UTC", 
                 "tz_offset": "+0000", 
-                "weekday": "Wednesday", 
-                "weekday_number": "3", 
-                "weeknumber": "16", 
+                "weekday": "Thursday", 
+                "weekday_number": "4", 
+                "weeknumber": "17", 
                 "year": "2018"
             }, 
             "default_ipv4": {
@@ -2374,7 +2366,7 @@ HOST Variables ("hostvars"):
                 "HISTCONTROL": "ignoredups", 
                 "HISTSIZE": "1000", 
                 "HOME": "/home/ec2-user", 
-                "HOSTNAME": "ip-10-30-0-60.ec2.internal", 
+                "HOSTNAME": "jenkins-node.hn-development.net", 
                 "LANG": "en_AU.UTF-8", 
                 "LC_CTYPE": "en_AU.UTF-8", 
                 "LESSOPEN": "||/usr/bin/lesspipe.sh %s", 
@@ -2385,13 +2377,13 @@ HOST Variables ("hostvars"):
                 "PWD": "/home/ec2-user/server-bootstraps-ansible/jenkins-node", 
                 "SHELL": "/bin/bash", 
                 "SHLVL": "3", 
-                "SSH_CLIENT": "10.1.0.20 62099 22", 
-                "SSH_CONNECTION": "10.1.0.20 62099 10.30.0.60 22", 
+                "SSH_CLIENT": "10.1.0.20 58986 22", 
+                "SSH_CONNECTION": "10.1.0.20 58986 10.30.0.60 22", 
                 "SSH_TTY": "/dev/pts/0", 
                 "TERM": "xterm-256color", 
                 "USER": "ec2-user", 
                 "XDG_RUNTIME_DIR": "/run/user/1000", 
-                "XDG_SESSION_ID": "3", 
+                "XDG_SESSION_ID": "1359", 
                 "_": "/usr/bin/python"
             }, 
             "eth0": {
@@ -2572,16 +2564,16 @@ HOST Variables ("hostvars"):
             "lsb": {}, 
             "machine": "x86_64", 
             "machine_id": "6376d7af4feb4cb0a80f68cca21b52e0", 
-            "memfree_mb": 3102, 
+            "memfree_mb": 2938, 
             "memory_mb": {
                 "nocache": {
-                    "free": 3693, 
-                    "used": 253
+                    "free": 3685, 
+                    "used": 261
                 }, 
                 "real": {
-                    "free": 3102, 
+                    "free": 2938, 
                     "total": 3946, 
-                    "used": 844
+                    "used": 1008
                 }, 
                 "swap": {
                     "cached": 0, 
@@ -2594,18 +2586,18 @@ HOST Variables ("hostvars"):
             "module_setup": true, 
             "mounts": [
                 {
-                    "block_available": 4882926, 
+                    "block_available": 4863374, 
                     "block_size": 4096, 
                     "block_total": 5239803, 
-                    "block_used": 356877, 
+                    "block_used": 376429, 
                     "device": "/dev/xvda1", 
                     "fstype": "xfs", 
-                    "inode_available": 10436297, 
+                    "inode_available": 10436140, 
                     "inode_total": 10484720, 
-                    "inode_used": 48423, 
+                    "inode_used": 48580, 
                     "mount": "/", 
                     "options": "rw,noatime,attr2,inode64,noquota", 
-                    "size_available": 20000464896, 
+                    "size_available": 19920379904, 
                     "size_total": 21462233088, 
                     "uuid": "5f826d47-a506-4747-83c0-2f876efb2a34"
                 }
@@ -2667,7 +2659,7 @@ HOST Variables ("hostvars"):
             ], 
             "system_capabilities_enforced": "True", 
             "system_vendor": "Xen", 
-            "uptime_seconds": 24747, 
+            "uptime_seconds": 710679, 
             "user_dir": "/home/ec2-user", 
             "user_gecos": "EC2 Default User", 
             "user_gid": 1000, 
@@ -2777,16 +2769,16 @@ HOST Variables ("hostvars"):
         "ansible_lsb": {}, 
         "ansible_machine": "x86_64", 
         "ansible_machine_id": "6376d7af4feb4cb0a80f68cca21b52e0", 
-        "ansible_memfree_mb": 3102, 
+        "ansible_memfree_mb": 2938, 
         "ansible_memory_mb": {
             "nocache": {
-                "free": 3693, 
-                "used": 253
+                "free": 3685, 
+                "used": 261
             }, 
             "real": {
-                "free": 3102, 
+                "free": 2938, 
                 "total": 3946, 
-                "used": 844
+                "used": 1008
             }, 
             "swap": {
                 "cached": 0, 
@@ -2798,18 +2790,18 @@ HOST Variables ("hostvars"):
         "ansible_memtotal_mb": 3946, 
         "ansible_mounts": [
             {
-                "block_available": 4882926, 
+                "block_available": 4863374, 
                 "block_size": 4096, 
                 "block_total": 5239803, 
-                "block_used": 356877, 
+                "block_used": 376429, 
                 "device": "/dev/xvda1", 
                 "fstype": "xfs", 
-                "inode_available": 10436297, 
+                "inode_available": 10436140, 
                 "inode_total": 10484720, 
-                "inode_used": 48423, 
+                "inode_used": 48580, 
                 "mount": "/", 
                 "options": "rw,noatime,attr2,inode64,noquota", 
-                "size_available": 20000464896, 
+                "size_available": 19920379904, 
                 "size_total": 21462233088, 
                 "uuid": "5f826d47-a506-4747-83c0-2f876efb2a34"
             }
@@ -2876,7 +2868,7 @@ HOST Variables ("hostvars"):
         ], 
         "ansible_system_capabilities_enforced": "True", 
         "ansible_system_vendor": "Xen", 
-        "ansible_uptime_seconds": 24747, 
+        "ansible_uptime_seconds": 710679, 
         "ansible_user_dir": "/home/ec2-user", 
         "ansible_user_gecos": "EC2 Default User", 
         "ansible_user_gid": 1000, 
@@ -2894,17 +2886,15 @@ HOST Variables ("hostvars"):
         }, 
         "ansible_virtualization_role": "guest", 
         "ansible_virtualization_type": "xen", 
-        "arefact_paths": [
-            [
-                "jenkins-node/agent.jar", 
-                "/agent"
-            ], 
-            [
-                "jenkins-node/agent_wrapper.sh", 
-                "/usr/local/sbin"
+        "artefact_paths": {
+            "jenkins": [
+                [
+                    "jenkins/jar/agent.jar", 
+                    "/var/jenkins/bin/agent.jar"
+                ]
             ]
-        ], 
-        "artefact_src_path": "https://s3.amazonaws.com/artefact-bucket-store", 
+        }, 
+        "artefact_src_path": "https://s3.amazonaws.com/hn-artefact-store", 
         "gather_subset": [
             "all"
         ], 
@@ -2930,20 +2920,18 @@ HOST Variables ("hostvars"):
         "inventory_file": "/home/ec2-user/server-bootstraps-ansible/jenkins-node/hosts.ini", 
         "inventory_hostname": "localhost", 
         "inventory_hostname_short": "localhost", 
+        "jenkins_home": "/var/jenkins", 
         "module_setup": true, 
-        "omit": "__omit_place_holder__853a203e7448d6788ccfbce6a874e2e1e69d9c21", 
+        "omit": "__omit_place_holder__97eee5c62b6ef976a91b9d533fae149f22f786c3", 
         "playbook_dir": "/home/ec2-user/server-bootstraps-ansible/jenkins-node", 
+        "script_paths": {
+            "env_utility_script": "/usr/local/sbin", 
+            "jenkins_agent_wrapper": "/var/jenkins/bin"
+        }, 
         "system_packages": [
             "java-1.8.0", 
             "git", 
             "ntpdate"
-        ], 
-        "users_groups": [
-            [
-                "jenkins", 
-                "jenkins", 
-                "/home/jenkins"
-            ]
         ], 
         "users_groups_map": [
             {
