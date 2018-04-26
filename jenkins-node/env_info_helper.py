@@ -23,27 +23,28 @@ cmd_args = sys.argv[1:]
 
 
 def get_path(arg):
-    try: 
-      std_out = subprocess.check_output("readlink -f $(which " + arg + ")", shell=True).rstrip()
-      return std_out
+    try:
+        std_out = subprocess.check_output("readlink -f $(which " + arg + ")", shell=True).rstrip()
+        return std_out
     except Exception as e:
-      return "Error on stat operation on: " + arg
+        return "Error on stat operation on: " + arg
+
 
 def get_env_var(arg):
     try:
-      std_out = os.environ[arg]
-      return std_out
+        std_out = os.environ[arg]
+        return std_out
     except KeyError as e:
-      return "Environment variable: " + arg + " not set"
+        return "Environment variable: " + arg + " not set"
 
 
 def get_sys_val(arg, *args):
     match_patterns = args
     try:
-      with open(arg, 'r') as f:
-          file_lines = f.read().split('\n')
+        with open(arg, 'r') as f:
+            file_lines = f.read().split('\n')
     except IOError as e:
-      return "Cannot read file: " + arg
+        return "Cannot read file: " + arg
     matched_lines = [x for x in file_lines if any(w in x for w in match_patterns)]
     std_out = '\n'.join(matched_lines)
     return std_out
@@ -64,22 +65,6 @@ elif cmd_name == 'sys_value':
 else:
     logging.error("Unknown command")
     sys.exit(1)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #    """
 #     Very Simple COMMAND reference
